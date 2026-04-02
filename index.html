@@ -20,6 +20,15 @@
 
 <body>
 
+    <nav class="fixed-nav">
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <header>
             <h1 class="hero-title">Olivier Bonnaure</h1>
@@ -63,7 +72,7 @@
 
         <main>
             <!-- Profile Section -->
-            <section>
+            <section id="profile">
                 <h2 class="section-title">Profile</h2>
                 <div class="profile-text">
                     <div>
@@ -78,7 +87,7 @@
             </section>
 
             <!-- Skills Section -->
-            <section>
+            <section id="skills">
                 <h2 class="section-title">Technical Expertise</h2>
                 <div class="skills-grid">
                     <!-- Highlight Core Skills -->
@@ -103,7 +112,7 @@
             </section>
 
             <!-- Experience Section -->
-            <section>
+            <section id="experience">
                 <h2 class="section-title">Professional Experience</h2>
                 <div class="timeline">
 
@@ -327,19 +336,9 @@
             </section>
 
             <!-- Projects & Education Section -->
-            <section>
+            <section id="projects">
                 <h2 class="section-title">Projects & Education</h2>
                 <div class="grid-2">
-                    <div class="card">
-                        <h3>Fasty</h3>
-                        <p>An open-source content management system built for speed and efficiency.</p>
-                        <a href="https://fasty.ovh" target="_blank">fasty.ovh &rarr;</a>
-                    </div>
-                    <div class="card">
-                        <h3>Lua on Beans</h3>
-                        <p>A lightning-fast micro MVC framework bundled as a single binary with database support.</p>
-                        <a href="https://luaonbeans.org" target="_blank">luaonbeans.org &rarr;</a>
-                    </div>
                     <div class="card card-featured">
                         <h3>Soli DB</h3>
                         <p><strong>A Revolutionary Approach to Data Management.</strong> Soli DB is not just another database, it's a lightning-fast, ultra-low resource engine built from the ground up to redefine backend efficiency. With minimal RAM and CPU footprints, it delivers blazing performance without the traditional cloud overhead.</p>
@@ -387,6 +386,16 @@
                         <h3>PDFX</h3>
                         <p>A high-performance, resource-efficient toolkit for seamless PDF generation and manipulation.</p>
                         <a href="https://pdfx.fr" target="_blank">pdfx.fr &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3>Fasty</h3>
+                        <p>An open-source content management system built for speed and efficiency.</p>
+                        <a href="https://fasty.ovh" target="_blank">fasty.ovh &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3>Lua on Beans</h3>
+                        <p>A lightning-fast micro MVC framework bundled as a single binary with database support.</p>
+                        <a href="https://luaonbeans.org" target="_blank">luaonbeans.org &rarr;</a>
                     </div>
                     <div class="card" style="grid-column: 1 / -1;">
                         <h3>Education</h3>

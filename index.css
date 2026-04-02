@@ -16,6 +16,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: var(--bg-color);
@@ -45,6 +50,45 @@ a:hover {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* Navigation */
+.fixed-nav {
+  position: fixed;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: max-content;
+  z-index: 1000;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 15px rgba(211, 0, 1, 0.08);
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.fixed-nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.fixed-nav a {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.fixed-nav a:hover {
+  opacity: 1;
+  color: var(--rails-red);
 }
 
 /* Header / Hero */
@@ -463,6 +507,15 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .fixed-nav {
+    width: 90%;
+    overflow-x: auto;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+  }
+  .fixed-nav ul { justify-content: space-between; gap: 1rem; }
+  .fixed-nav::-webkit-scrollbar { display: none; }
+  
   .hero-title { font-size: 2.5rem; }
   .exp-header { flex-direction: column; }
   .experience-item { padding: 1.5rem; }
