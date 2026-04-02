@@ -11,14 +11,16 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css?v=2">
 </head>
 
 <body>
+    <canvas id="bg-canvas"></canvas>
 
     <nav class="fixed-nav">
         <ul>
@@ -341,18 +343,28 @@
                 <div class="grid-2">
                     <div class="card card-featured">
                         <h3>Soli DB</h3>
-                        <p><strong>A Revolutionary Approach to Data Management.</strong> Soli DB is not just another database, it's a lightning-fast, ultra-low resource engine built from the ground up to redefine backend efficiency. With minimal RAM and CPU footprints, it delivers blazing performance without the traditional cloud overhead.</p>
+                        <p><strong>A Revolutionary Approach to Data Management.</strong> Soli DB is not just another
+                            database, it's a lightning-fast, ultra-low resource engine built from the ground up to
+                            redefine backend efficiency. With minimal RAM and CPU footprints, it delivers blazing
+                            performance without the traditional cloud overhead.</p>
                         <ul>
-                            <li><strong>Live Queries:</strong> Subscribe to real-time data changes instantly, powering reactive frontends with zero boilerplate.</li>
-                            <li><strong>Embedded Lua Runtime:</strong> Write and execute complex business logic directly within the database engine for unparalleled speed.</li>
-                            <li><strong>ACID Transactions & Distributed Architecture:</strong> Rock-solid reliability and horizontal scalability right out of the box.</li>
+                            <li><strong>Live Queries:</strong> Subscribe to real-time data changes instantly, powering
+                                reactive frontends with zero boilerplate.</li>
+                            <li><strong>Embedded Lua Runtime:</strong> Write and execute complex business logic directly
+                                within the database engine for unparalleled speed.</li>
+                            <li><strong>ACID Transactions & Distributed Architecture:</strong> Rock-solid reliability
+                                and horizontal scalability right out of the box.</li>
                         </ul>
-                        <a href="https://solidb.solisoft.net" target="_blank" class="contact-tag">Discover Soli DB &rarr;</a>
+                        <a href="https://solidb.solisoft.net" target="_blank" class="contact-tag">Discover Soli DB
+                            &rarr;</a>
                     </div>
                     <div class="card card-featured">
                         <h3>Soli Lang</h3>
-                        <p><strong>The Ultimate Developer Experience.</strong> Soli Lang is a batteries-included MVC framework engineered for developers who demand both elegance and extreme performance. Combining the syntactic joy of Ruby with the unparalleled speed of Rust, it empowers you to build beautiful, dynamic web applications at record speeds.</p>
-                        
+                        <p><strong>The Ultimate Developer Experience.</strong> Soli Lang is a batteries-included MVC
+                            framework engineered for developers who demand both elegance and extreme performance.
+                            Combining the syntactic joy of Ruby with the unparalleled speed of Rust, it empowers you to
+                            build beautiful, dynamic web applications at record speeds.</p>
+
                         <pre data-filename="app/controllers/posts_controller.sl"><code><span class="syn-keyword">class</span> <span class="syn-class">PostsController</span> <span class="syn-operator">&lt;</span> <span class="syn-class">Controller</span>
   <span class="syn-keyword">def</span> <span class="syn-method">index</span>(req)
     <span class="syn-keyword">let</span> posts <span class="syn-operator">=</span> <span class="syn-class">Post</span>
@@ -366,11 +378,15 @@
 <span class="syn-keyword">end</span></code></pre>
 
                         <ul>
-                            <li><strong>Batteries Included:</strong> Everything you need, from routing and templating to a built-in ORM, is ready to go.</li>
-                            <li><strong>Rust-Powered Performance:</strong> Built on Rust for raw speed, effortlessly handling over 1.2 million requests per second.</li>
-                            <li><strong>Ruby-Like Elegance:</strong> Write expressive, deeply satisfying code that translates into sleek, rapid web experiences.</li>
+                            <li><strong>Batteries Included:</strong> Everything you need, from routing and templating to
+                                a built-in ORM, is ready to go.</li>
+                            <li><strong>Rust-Powered Performance:</strong> Built on Rust for raw speed, effortlessly
+                                handling over 1.2 million requests per second.</li>
+                            <li><strong>Ruby-Like Elegance:</strong> Write expressive, deeply satisfying code that
+                                translates into sleek, rapid web experiences.</li>
                         </ul>
-                        <a href="https://lang.solisoft.net" target="_blank" class="contact-tag">Explore Soli Lang &rarr;</a>
+                        <a href="https://lang.solisoft.net" target="_blank" class="contact-tag">Explore Soli Lang
+                            &rarr;</a>
                     </div>
                     <div class="card">
                         <h3>Soli KV</h3>
@@ -384,7 +400,8 @@
                     </div>
                     <div class="card">
                         <h3>PDFX</h3>
-                        <p>A high-performance, resource-efficient toolkit for seamless PDF generation and manipulation.</p>
+                        <p>A high-performance, resource-efficient toolkit for seamless PDF generation and manipulation.
+                        </p>
                         <a href="https://pdfx.fr" target="_blank">pdfx.fr &rarr;</a>
                     </div>
                     <div class="card">
@@ -408,9 +425,10 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Olivier Bonnaure. Designed with a Ruby on Rails aesthetic.</p>
+        <p>&copy; 2026 Olivier Bonnaure.</p>
     </footer>
 
+    <script src="./canvas.js"></script>
 </body>
 
 </html>
